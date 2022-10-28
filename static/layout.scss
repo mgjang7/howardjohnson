@@ -1,0 +1,343 @@
+@tailwind base;
+
+// .container{
+//     @apply max-w-screen-xl px-4 xl:px-0 md:mt-0;     
+// }
+
+// .full-container {
+//     width: 100%;
+//     @apply px-4 xl:px-0 md:mt-0;
+// }
+
+// body{
+//     margin: 0 auto;
+//     width: 1200px;
+//     font-family: 'Noto Sans KR', sans-serif !important;
+//     //font-family: "Noto Sans", "Noto Sans CJK KR", sans-serif !important;
+
+//     .montserrat,
+//     [montserrat] {
+//         font-family: 'Montserrat', sans-serif ;
+//     }
+// }
+
+// @layer base{
+//     .montserrat,
+//     [montserrat] {
+//         font-family: 'Montserrat', sans-serif;
+//     }
+// }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// @tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .merienda,
+    [merienda] {
+        font-family: 'Merienda', sans-serif;
+    }
+    /* .montserrat,
+    [montserrat] {
+        font-family: 'Montserrat', sans-serif;
+    } */
+}
+
+@font-face {
+    font-family: "NotoSansBlack";
+    src: url(./assets/font/NotoSansCJKkr-hinted/NotoSansCJKkr-Black.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "NotoSansBold";
+    src: url(./assets/font/NotoSansCJKkr-hinted/NotoSansCJKkr-Bold.otf) format("truetype");
+}
+@font-face {
+    font-family: "NotoSansMedium";
+    src: url(./assets/font/NotoSansCJKkr-hinted/NotoSansCJKkr-Medium.otf) format("truetype");
+}
+@font-face {
+    /* font-family: "MeriendaBold";
+    src: url(./assets/font/Montserrat/Montserrat-Bold.ttf) format("truetype"); */
+    font-family: "NotoSansRegular";
+    src: url(./assets/font/NotoSansCJKkr-hinted/NotoSansCJKkr-Regular.otf) format("truetype");
+    /* font-family: "NotoSansBold";
+    src: url(./assets/font/NotoSansCJKkr-hinted/NotoSansCJKkr-Black.otf) format("truetype"); */
+}
+@font-face {
+    font-family: "NotoSansLight";
+    src: url(./assets/font/NotoSansCJKkr-hinted/NotoSansCJKkr-Light.otf) format("truetype");
+}
+@font-face {
+    font-family: "NotoSansThin";
+    src: url(./assets/font/NotoSansCJKkr-hinted/NotoSansCJKkr-Thin.otf) format("truetype");
+}
+/* .merienda-bold {
+    font-family: "MeriendaBold";
+} */
+
+/* 공통 ============================================================================================================== */
+
+#google_translate_element > div > div  {
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    border-radius: 4px;
+    padding: 2px;
+}
+#google_translate_element > div > div > span > a > img  {
+    display: none;
+}
+
+body{
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    font-family: "NotoSansRegular";
+}
+
+.howard-contents span {
+    color: #212121;
+}
+.howard-contents p {
+    color: #212121;
+}
+
+.noto-sans-bold {
+    font-family: "NotoSansBold";
+}
+.noto-sans-medium {
+    font-family: "NotoSansMedium";
+}
+.noto-sans-light {
+    font-family: "NotoSansLight";
+}
+.noto-sans-thin {
+    font-family: "NotoSansThin";
+}
+
+/* 컨텐츠 영역 기본 너비 */
+.container-box {
+    width: 1280px;
+}
+
+/* 하워드 배경 색상 */
+.howard-bg-color {
+    background-color: #EE792F;
+}
+
+.howard-color {
+    color: #EE792F;
+}
+
+/* 하워드 게시판, 카드 border 색상 */
+.howard-board-card-border-color {
+    border-color: #eeeeee;    
+}
+
+/* 하워드 안내문구 border */
+.howard-info-border-full {
+    /* border: 1px solid #BDBDBD; */
+    border: 1px solid #eeeeee;
+}
+.howard-info-border-t {
+    border-top: 1px solid #eeeeee;
+}
+.howard-info-border-b {
+    border-bottom: 1px solid #eeeeee;
+}
+.howard-info-border-r {
+    border-right: 1px solid #eeeeee;
+}
+.howard-info-border-l {
+    border-left: 1px solid #eeeeee;
+}
+
+.howard-info-border-full2 {
+    border: 2px solid #eeeeee;
+}
+.howard-info-border-t2 {
+    border-top: 2px solid #eeeeee;
+}
+.howard-info-border-b2 {
+    border-bottom: 2px solid #eeeeee;
+}
+.howard-info-border-r2 {
+    border-right: 2px solid #eeeeee;
+}
+.howard-info-border-l2 {
+    border-left: 2px solid #eeeeee;
+}
+/* 공통 end ========================================================================================================== */
+
+
+/* Web ============================================================================================================== */
+/* 하워드 메인 타이틀 - 웹 */
+.howard-main-title {
+    font-size: 36px;
+    color: #212121;
+    font-weight: bold;
+    font-family: "NotoSansBold";
+    letter-spacing: -1.8px;
+}
+
+/* 하워드 서브 타이틀 - 웹 */
+.howard-sub-title {
+    font-size: 16px;
+    color: #212121;
+    /* font-weight: 300; */
+    letter-spacing: -0.8px;
+}
+/* 하워드 웹 버튼 */
+.howard-btn {
+    background-color: #EE792F;
+    border-radius: 9999px;
+    font-size: 16px;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    /* padding-left: 30px;
+    padding-right: 30px; */
+}
+
+.howard-btn:hover {
+    background-color: #FF9552;
+}
+
+/* 하워드 웹 버튼 - Big */
+.howard-big-btn {
+    background-color: #EE792F;
+    color: white;
+    font-size: 20px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 106px;
+    padding-right: 106px;
+    border-radius: 9999px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.howard-big-btn:hover {
+    background-color: #FF9552;
+}
+
+/* 하워드 웹 버튼(white) - Big */
+.howard-big-white-btn {
+    background-color: white;
+    color: #EE792F;
+    font-size: 20px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 106px;
+    padding-right: 106px;
+    border-radius: 9999px;
+    border-color: #EE792F;
+    border-width: 1px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.howard-big-white-btn:hover {
+    /* border-width: 0px; */
+    border-color: #FF9552;
+    color: white;
+    background-color: #FF9552;
+}
+/* Web end ========================================================================================================== */
+
+
+/* Mobile ============================================================================================================== */
+/* 하워드 메인 타이틀 - 모바일 */
+.howard-main-title-mobile {
+    font-size: 20px;
+    color: #212121;
+    font-weight: bold;
+    font-family: "NotoSansBold";
+    letter-spacing: -1px;
+}
+
+/* 하워드 서브 타이틀 - 모바일 */
+.howard-sub-title-mobile {
+    font-size: 12px;
+    color: #212121;
+    /* font-weight: 500; */
+    letter-spacing: -0.6px;
+    font-family: "NotoSansLight";
+}
+/* 하워드 모바일 버튼 - Big  */
+.howard-big-btn-mobile {
+    background-color: #EE792F;
+    color: white;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* padding-left: 59px;
+    padding-right: 59px; */
+    padding-left: 56px;
+    padding-right: 56px;
+    border-radius: 9999px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.howard-big-btn-mobile:hover {
+    background-color: #FF9552;
+}
+
+/* 하워드 모바일 버튼(white) - Big */
+.howard-big-white-btn-mobile {
+    background-color: white;
+    color: #EE792F;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* padding-left: 59px;
+    padding-right: 59px; */
+    padding-left: 56px;
+    padding-right: 56px;
+    border-radius: 9999px;
+    border-color: #EE792F;
+    border-width: 1px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.howard-big-white-btn-mobile:hover {
+    border-color: #FF9552;
+    color: white;
+    background-color: #FF9552;
+}
+/* 하워드 모바일 버튼 */
+.howard-btn-mobile {
+    background-color: #EE792F;
+    border-radius: 9999px;
+    font-size: 12px;
+    color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    /* padding-left: 16px;
+    padding-right: 16px; */
+}
+
+.howard-btn-mobile:hover {
+    background-color: #FF9552;
+}
+/* Mobile end ========================================================================================================== */
+#google_translate_element {
+    > div > div {
+      display: flex;
+      flex-direction: row;
+      height: 25px;
+      border-radius: 4px;
+      padding: 2px;
+  
+      > span {
+        > a {
+          > img {
+            display: none;
+          }
+        }
+      }
+    }
+  }
